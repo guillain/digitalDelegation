@@ -1,0 +1,30 @@
+{
+  "name": "digitaldelegation",
+  "version": "1.0.0",
+  "description": "Cisco Spark integration with SygFox button",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "node-sparky": "^4.0.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guillain/digitalDelegation.git"
+  },
+  "keywords": [
+    "Cisco",
+    "Spark",
+    "SygFox",
+    "button"
+  ],
+  "author": "Guillain",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/guillain/digitalDelegation/issues"
+  },
+  "homepage": "https://github.com/guillain/digitalDelegation#readme"
+}
