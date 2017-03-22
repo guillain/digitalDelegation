@@ -4,7 +4,7 @@ Cisco Spark integration with SygFox button
 ## What is it?
 * Bt.tn / Sygfox button as trigger
 * Cisco Spark as Space for human and data
-* => When the Button is push Cisco Spark is created and people are added
+* => When the Button is pushed Cisco Spark space is created and people are added
 
 ## Based on
 * [sparky](https://github.com/flint-bot/sparky) (nodejs + express)
