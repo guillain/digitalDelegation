@@ -1,0 +1,31 @@
+/**
+ * @file Cisco Spark Main bot
+ * @author guillain <guillain@gmail.com>
+ * @license GPL-3.0
+ * @features:
+ * @@ servicedesk
+ */
+
+var config = {};
+
+config.name = 'digitalDelegation';
+config.email = '';
+config.debug = '1';
+
+// Flint
+config.address = 'localhost';
+config.port = '8080';
+
+// Spark
+config.sparkbot = '';
+config.token = '';
+
+// Digital Delegation conf
+config.DD = {};
+config.DD.emailA = config.email;
+config.DD.emailB = config.email;
+config.DD.storage = 'digitalDelegation';
+config.DD.roomtitle = 'Digital Delegation \n';
+
+// export config
+module.exports = config;
