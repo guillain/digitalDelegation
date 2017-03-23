@@ -1,14 +1,14 @@
 # digitalDelegation
-Cisco Spark integration with SygFox button
+Cisco Spark integration with SigFox button
 
 ## What is it?
-* Bt.tn / Sygfox button as trigger
+* Bt.tn / Sigfox button as trigger
 * Cisco Spark as Space for human and data
 * => When the Button is pushed Cisco Spark space is created and people are added
 
 ## Based on
 * [sparky](https://github.com/flint-bot/sparky) (nodejs + express)
-* [bt.tn](https://my.bt.tn) can also provide simulator
+* [bt.tn](https://my.bt.tn) (can also provide simulator)
 
 ## HowTo
 * Clone localy
@@ -30,6 +30,7 @@ Cisco Spark integration with SygFox button
 
 * Config your app with your [spark bot](https://developer.ciscospark.com/apps.html)
 
+> cp config.js.defualt config.js
 > vi config.js
 
 * Run the application, two configuration availables
