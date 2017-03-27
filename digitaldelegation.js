@@ -14,14 +14,12 @@ var spark = new Spark({ token: config.token  });
 message = function (roomid, message) {
   var newMessage = {
     roomId: roomid,
-    text: message
+    markdown: message
   };
   console.log('>>> message: ' + message);
-/*
   spark.messageSend(newMessage)
     .then(function(res) { console.log(res); })
     .catch(function(err) { console.log(err); });
-*/
 }
 
 messageSum = function (message) {
@@ -32,23 +30,36 @@ messageSum = function (message) {
 }
 
 exports.start = function (req, res) {
+  var roomName = config.DD.roomtitle + ' ' + req.body.name;
   console.log('>>> bt.tn name: ' + req.body.name);
 
   // Open a Spark room with DD team
-  room = spark.roomAdd(config.DD.roomtitle + ' ' + req.body.name)
+  room = spark.roomAdd(roomName)
     .then(function(room) {
-      console.log('>>> room title: ' + config.DD.roomtitle + ' ' + req.body.name);
-      message(room.id, '* Space created '+config.DD.roomtitle);
+      console.log('>>> room name:' + roomName);
+      msg  = 'Button\'s info \n';
+      msg += '* ID: ' + req.body.ID + '\n';
+      msg += '* EID: ' + req.body.EID + '\n';
+      msg += '* Device ID: ' + req.body.DEVICEID + '\n';
+      msg += '* Counter: ' + req.body.counter + '\n';
+      msg += '* Date: ' + req.body.date + '\n';
+      msg += '* Time: ' + req.body.time + '\n';
+      msg += '* Name: ' + req.body.name + '\n';
+      msg += '* User: ' + req.body.user + '\n';
+      msg += '* Location: ' + req.body.location + '\n';
+      msg += '* Email: ' + req.body.emailaddress + '\n';
+      message(room.id, msg);
 
       memberroom = spark.membershipAdd(room.id, config.DD.emailA, '1')
-        .then(function(room) { message(room.id, '* Admin membership added: '+config.DD.emailA); })
-        .catch(function(err) { console.log(err); });
+        .then(function(room) { }) //message(room.id, '* Admin membership added: '+config.DD.emailA); })
+        .catch(function(err) { console.log('* Issue during Admin membership added: '+config.DD.emailA); });
 
       memberroom = spark.membershipAdd(room.id, config.DD.emailB, '0')
-        .then(function(room) { message(room.id, '* Membership added: '+config.DD.emailB); })
-        .catch(function(err) { console.log(err); });
+        .then(function(room) { }) //message(room.id, '* Membership added: '+config.DD.emailB); })
+        .catch(function(err) { console.log('Issue during membership added: '+config.DD.emailB); });
 
     })
     .catch(function(err) { console.log(err); });
+
 }
 

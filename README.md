@@ -26,7 +26,19 @@ Cisco Spark integration with SygFox button
 * Config your [bt.tn](https://my.bt.tn/home) with:
 * * url
 * * POST method
-* * application/json : {"name":"<NAME>"}
+* * application/json :
+{
+"ID":"<ID>", 
+"EID":"<EID>",
+"DEVICEID":"<DEVICEID>",
+"counter":"<COUNTER>",
+"date":"<DATE>", 
+"time": "<TIME>",
+"name":"<NAME>",
+"user":"<USER>",
+"location":"<LOCATION>",
+"emailaddress":"<EMAILADDRESS>"
+}
 
 * Config your app with your [spark bot](https://developer.ciscospark.com/apps.html)
 
