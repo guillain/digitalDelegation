@@ -28,7 +28,9 @@ Cisco Spark integration with SigFox button
 * * HTTP URL: your url
 * * HTTP Method: POST
 * * Arguments: application/json
-* * '{"ID":"<ID>","EID":"<EID>","DEVICEID":"<DEVICEID>","counter":"<COUNTER>","date":"<DATE>", "time": "<TIME>","name":"<NAME>","user":"<USER>","location":"<LOCATION>","emailaddress":"<EMAILADDRESS>"}'
+'''
+{"ID":"<ID>","EID":"<EID>","DEVICEID":"<DEVICEID>","counter":"<COUNTER>","date":"<DATE>", "time": "<TIME>","name":"<NAME>","user":"<USER>","location":"<LOCATION>","emailaddress":"<EMAILADDRESS>"}
+'''
 * Config your app with your [spark bot](https://developer.ciscospark.com/apps.html)
 
 > cp config.js.defualt config.js
