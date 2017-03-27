@@ -24,9 +24,12 @@ Cisco Spark integration with SigFox button
 > npm install
 
 * Config your [bt.tn](https://my.bt.tn/home) with:
-* * url
-* * POST method
-* * application/json :
+* * action: HTTP
+* * HTTP URL: your url
+* * HTTP Method: POST
+* * Arguments: application/json
+*
+ 
 {
 "ID":"<ID>", 
 "EID":"<EID>",
