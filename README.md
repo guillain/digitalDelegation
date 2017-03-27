@@ -28,21 +28,7 @@ Cisco Spark integration with SigFox button
 * * HTTP URL: your url
 * * HTTP Method: POST
 * * Arguments: application/json
-*
- 
-{
-"ID":"<ID>", 
-"EID":"<EID>",
-"DEVICEID":"<DEVICEID>",
-"counter":"<COUNTER>",
-"date":"<DATE>", 
-"time": "<TIME>",
-"name":"<NAME>",
-"user":"<USER>",
-"location":"<LOCATION>",
-"emailaddress":"<EMAILADDRESS>"
-}
-
+* * {"ID":"<ID>","EID":"<EID>","DEVICEID":"<DEVICEID>","counter":"<COUNTER>","date":"<DATE>", "time": "<TIME>","name":"<NAME>","user":"<USER>","location":"<LOCATION>","emailaddress":"<EMAILADDRESS>"}
 * Config your app with your [spark bot](https://developer.ciscospark.com/apps.html)
 
 > cp config.js.defualt config.js
@@ -58,12 +44,8 @@ Cisco Spark integration with SigFox button
 
 > ./app [start|stop|restart|show|staus|log]
 
-* Add the bot in 1:1 chat room
-* Load the csv file (from the room)
-
-
-* Ask the bot
-
+* Push your button!!!
+* Check what happen on your Cisco Spark app
 
 
 Have fun
