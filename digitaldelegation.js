@@ -22,13 +22,6 @@ message = function (roomid, message) {
     .catch(function(err) { console.log(err); });
 }
 
-messageSum = function (message) {
-  tosay  = config.DD.msgintro + '\n';
-  tosay += message + '\n';
-  tosay += config.DD.msgend + '\n';
-  return (tosay);
-}
-
 exports.start = function (req, res) {
   var roomName = config.DD.roomtitle + ' ' + req.body.name;
   console.log('>>> bt.tn name: ' + req.body.name);
