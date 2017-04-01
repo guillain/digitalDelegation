@@ -7,7 +7,7 @@
 # @@ prod
 #
 
-APP='index.js'
+APP='index_digitaldelegation.js'
 APP_DIR='/var/www/digitalDelegation'
 LOG_DIR="${APP_DIR}/log"
 

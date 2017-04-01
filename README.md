@@ -33,7 +33,7 @@ Cisco Spark integration with SigFox button
 ```
 * Config your app with your [spark bot](https://developer.ciscospark.com/apps.html)
 
-> cp config.js.defualt config.js
+> cp config.js.default config.js
 > vi config.js
 
 * Run the application, two configuration availables
